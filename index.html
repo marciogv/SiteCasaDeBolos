@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa de Bolos Caseiros</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=PT+Serif&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="fotos-context general-context">
+        <div class="fotos-content">
+            <div class="foto-principal"><img class="imagem-principal"></div>
+            <div class="botao botao-direito"></div>
+            <div class="botao botao-esquerdo"></div>
+        </div>
+        <input type="checkbox"  class="nav__checkbox" id="nav-toggle">
+        <label for="nav-toggle" class="nav__button">
+            <span class="nav__icon">&nbsp;</span>
+        </label>    
+        <nav class="menu-context general-context">
+            <div class="menu-content">
+                <a href="#" class="link-menu">Sobre Nós</a>
+                <a href="#" class="link-menu">Cardápio</a>
+                <a href="#" class="link-menu">Contato</a>
+            </div>
+        </nav>
+
+    </div>
+    <div class="linha-divisoria-menu"></div>
+    <div class="sobre-nos-context general-context" data-aos="fade-right"  data-aos-duration="1000">
+        <div class="sobre-nos-content">
+            <h2>Casa de Bolos</h2>
+            <p class="quem-somos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam velit tempore dolores nemo hic quisquam dolorem recusandae ex incidunt omnis commodi, inventore culpa, facere iure laboriosam impedit veniam itaque temporibus.</p>
+        </div>
+    </div>
+    <div class="cardapio-context general-context">
+        <div class="produtos itens-cardapio">
+            <ul class="tipos-bolos-mediaquery">
+                <li class="bolo"><h3 class="titulo-bolos-media" id="caseiros">Bolos Caseiros</h3></li>
+                <li class="bolo" id="cookie"><h3 class="titulo-bolos-media" id="coberturas">Coberturas</h3></li>
+                <li class="bolo" id="cookie"><h3 class="titulo-bolos-media" id="especiais">Bolos especiais</h3></li>
+                <li class="bolo" id="cookie"><h3 class="titulo-bolos-media" id="integrais">Bolos integrais</h3></li>
+                <li class="bolo" id="cookie"><h3 class="titulo-bolos-media" id="cucas">Cucas</h3></li>
+            </ul>
+            <div class="forno">
+                <div class="foto-forno"></div>
+                <div class="forno-content">
+                    <ul class="bolos-dinamicos-mediaquery"></ul>
+                    <div class="porta porta-direita">
+                        <div class="macaneta"></div>
+                    </div>
+                </div>
+                <div class="descricao-produto"></div>
+            </div>    
+        </div>
+    </div>
+    <div class="contatos-context general-context"></div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

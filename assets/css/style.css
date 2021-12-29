@@ -1,0 +1,802 @@
+:root {
+    --color-pink: rgb(139, 23, 91);
+    --color-blue-green: rgb(9, 51, 65);
+    --color-background-general: rgba(139, 23, 91, 0.080);
+    /* background-color: rgb(25, 92, 85); */
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* Border radius */
+
+.borda {
+    border-radius: 1rem;
+}
+
+/* Setores */
+.general-context {
+    max-width: 120rem;
+    margin: 5rem auto;
+    border-radius: 1%;
+    background: var(--color-background-general);
+    color: var(--color-blue-green);
+    font-family: 'PT Serif', serif;
+}
+
+.pagina-toda {
+    position: absolute;
+    background: blue;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+}
+
+.menu-context {
+    margin: 0 auto;
+    position: fixed;
+    /* width: 120rem; */
+    width: 100%;
+    top: 0;
+    /* left: none; */
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    z-index: 200;
+    background: none;
+    transition: all 1200ms ease-in-out;
+}
+
+.fotos-context {
+    height: 100vh;
+    position: relative;
+    margin-top: 0;
+}
+
+.sobre-nos-context {
+    z-index: 10;
+}
+
+.cardapio-context {
+    /* height: calc(100vh - 10rem); */
+    /* height: calc(100vh - 10rem); */
+    margin: 0 auto;
+    position: relative;
+    /* z-index: 6; */
+}
+
+.contatos-context {
+    height: 50rem;
+}
+
+/* Menu */
+.link-menu {
+    font-size: 3.5rem;
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
+    color: var(--color-pink);
+    display: block; 
+    width: 100%;
+    height: 50%;
+    margin: 1.5rem;
+    text-align: center;
+}
+
+.menu-content {
+    display: flex;
+    /* margin: 0 auto; */
+    list-style: none;
+    text-align: center;
+    width: 90%;
+    height: 100%;
+    border-radius: 0 0 3rem 3rem;
+    background: white;
+    transition: all 1200ms ease-in-out;
+}
+
+.linha-divisoria-menu {
+    /* display: none; */
+    position: fixed;
+    top: 10rem;
+    left: 50%;
+    height: 1px;
+    width: 0;
+    background: var(--color-pink);
+    z-index: 100;
+    transition: all 1500ms ease-in-out;
+}
+
+
+.img-logo {
+    height: 8rem;
+    width: 11rem;
+    margin: 0.8rem 0 0 3rem;
+}
+
+/* Fotos Principal */
+.fotos-content {
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    position: relative;
+}
+
+.foto-principal {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.imagem-principal {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 1000ms ease-in-out;
+    z-index: 1;
+}
+
+/* Fotos - botoes */
+.botao {
+    position: absolute;
+    height: 4rem;
+    width: 4rem;
+    background: red;
+    font-size: 7rem;
+    text-align: left;
+    z-index: 3;
+    }
+
+.botao-esquerdo {
+    left: 0;
+    top: 45%;
+}
+
+.botao-direito {
+    right: 0;
+    top: 45%;
+}
+
+/* Sobre Nós */
+
+.sobre-nos-content {
+    height: 100%;
+    width: 100%;
+    padding: 3rem;
+}
+
+.sobre-nos-content h2{
+    font-size: 4rem;
+    /* font-family: 'Pacifico', cursive; */
+}
+
+.quem-somos {
+    font-size: 3rem;
+    padding: 2rem;
+    /* font-family: 'Alegreya', serif; */
+}
+
+/* Forno */
+
+.forno {
+    position: relative;
+    height: 100%;
+    width: calc(100% - 7rem);
+    display: flex;
+    flex-grow: 3;
+    justify-content: center;
+    /* background: black; */
+}
+
+.foto-forno {
+    width: 80rem;
+    height: 100%;
+    position: relative;
+}
+
+.imagem-forno {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: all 1000ms ease-in-out;
+}
+
+
+/* Detalhes forno */
+.base-forno {
+    position: absolute;
+    width: 100%;
+    height: 3rem;
+    background: rgb(63, 11, 41);
+    top: 0;
+    left: 0;
+    z-index: 10;
+    border-bottom: 0.1rem solid white;
+}
+
+.fundo-forno {
+    position: absolute;
+    width: 100%;
+    height: 3rem;
+    background: rgb(63, 11, 41);
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    border-top: 0.1rem solid white;
+}
+.esquerda-forno {
+    position: absolute;
+    width: 3rem;
+    height: 100%;
+    background: rgb(63, 11, 41);
+    top: 0;
+    left: 0;
+    z-index: 10;
+    border-right: 0.1rem solid white;
+}
+.direita-forno {
+    position: absolute;
+    width: 3rem;
+    height: 100%;
+    background: rgb(63, 11, 41);
+    top: 0;
+    right: 0;
+    z-index: 10;
+    border-left: 0.1rem solid white;
+}
+
+.descricao-produto {
+    position: absolute;
+    width: 60%;
+    height: 3rem;
+    background: white;
+    bottom: 5rem;
+    left: 20%;
+    z-index: 1;
+    border-radius: 2%;
+    transform: translateY(5rem);
+    opacity: 0;
+    transition: all 1000ms ease-in-out;
+}
+
+/* Fotos - portas */
+.forno-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 2;
+}
+
+/* .esconde-porta-direita {
+    position: absolute;
+    right: -37rem;
+    top: 0;
+    width: 37rem;
+    height: 100%;
+    background: white;
+    z-index: 5;
+} */
+
+/* .esconde-porta-esquerda {
+    position: absolute;
+    left: -37rem;
+    top: 0;
+    width: 37rem;
+    height: 100%;
+    background: white;
+    z-index: 5;
+} */
+/* .portas-forno {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 2;
+} */
+
+.porta {
+    background: black;
+    height: 100%;
+    width: 100%;
+    transition: all 2000ms ease-in-out;
+    z-index: 2;
+    position: relative;
+}
+
+/* .porta-esquerda {
+    border-right: 0.1rem groove white;
+} */
+
+/* .porta-direita {
+    border-left: 0.5rem groove white;
+} */
+
+/* .porta-esquerda::after {
+    position: absolute;
+    content: " ";
+    width: 1rem;
+    height: 20rem;
+    background: white;
+    right: 7%;
+    top: 30%;
+} */
+
+/* .porta-direita::after {
+    position: absolute;
+    content: " ";
+    width: 1rem;
+    height: 20rem;
+    background: white;
+    left: 6rem;
+    top: 30%;
+    z-index: 1;
+} */
+.macaneta {
+    position: absolute;
+    width: 1rem;
+    height: 20rem;
+    background: white;
+    left: 6rem;
+    top: 30%;
+    z-index: 1;
+    opacity: 1;
+    transition: all 2000ms ease-in-out;
+}
+
+/* Cardápio */
+
+.produtos {
+    display: flex;
+    padding: 10rem 7rem 4rem 5rem;
+    height: 70rem;
+    width: 100%;
+    z-index: 100;
+    background-image: url('cardapio-completo-sem-texto-sem-titulo.png');
+    background-size: 100% 100%;
+    /* background: red */
+}
+
+.titulo-bolos {
+    margin-bottom: 1rem;
+}
+
+.bolo, .bolo-titulo {
+    padding: 0.5rem 1rem;
+    list-style-type: none;
+}
+
+.bolos {
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+.bolos-tradicionais {
+    display: flex;
+    font-size: 1.5rem;
+}
+
+
+/* .tipos-bolos-mediaquery, .bolos-dinamicos-mediaquery {
+    display: none;
+} */
+
+.fundo-bolos {
+    background: var(--color-background-general);
+    border-radius: 1%;
+}
+
+.bolos-dinamicos-mediaquery {
+    padding: 4rem 12rem 5rem 4rem;
+    position: absolute;
+    display: grid;
+    /* display: none; */
+    gap: 1rem;
+    height: 100%;
+    width: 100%;
+    margin-left: 2rem;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    list-style: none;
+    justify-items: center;
+    align-items: center;
+    z-index: 1;
+    transition: all 2000ms ease-in-out;
+    opacity: 1;
+    background: white;
+}
+
+.tipos-bolos-mediaquery {
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    position: relative;
+    margin-right: 2rem;
+}
+
+.tipos-bolos-mediaquery::after {
+    content: "";
+    background: rgba(0, 0, 0, 0.37);
+    height: 100%;
+    width: 0.1rem;
+    position: absolute;
+    right: -0.5rem;
+}
+
+/* .separacao-bolos-mediaquery {
+    height: 100%;
+    width: 0.1rem;
+    background: black;
+    z-index: 170;
+} */
+
+/* .produtos {
+    padding: 5.5rem 5rem 4rem 3.5rem;
+    background-image: url('cardapio-completo-sem-texto-sem-titulo.png');
+}    */
+
+.lista-mediaquery {
+    text-align: center;
+    padding-top: 40%;
+    width: 100%;
+    height: 100%;
+    /* background: var(--color-background-general); */
+    border-radius: 1%;
+    border: 0.1rem solid rgba(0, 0, 0, 0.082);
+    z-index: 1000;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px;
+    /* opacity: 0; */
+}
+
+@media (max-width: 768px) {
+
+    /* Cardápio */
+
+    .produtos {
+        height: 70vh;
+        background-image: url('cardapio-900-1024.jpg');
+        padding: 9rem 12rem 6rem 9rem;
+    }
+
+    .forno {
+        width: calc(100% - 9rem);
+    }
+
+    .imagem-forno {
+        max-width: 395px;
+        max-height: 568px;
+    }
+    .foto-forno {
+        max-width: 395px;
+        max-height: 568px;
+    }
+
+    /* .base-forno, .fundo-forno, .esquerda-forno, .direita-forno {
+        display: none;
+    } */
+
+    .bolos-dinamicos-mediaquery {
+        padding: 2rem 4rem 2rem 4rem;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 8rem 8rem 8rem 8rem;
+    }
+
+    /* .tipos-bolos-mediaquery {
+        position: relative;
+        margin-right: 2rem;
+    }
+
+    .tipos-bolos-mediaquery::after {
+        content: "";
+        background: rgba(0, 0, 0, 0.37);
+        height: 100%;
+        width: 0.1rem;
+        position: absolute;
+        right: -0.5rem;
+    } */
+
+    /* .divisao-media {
+        width: 10rem;
+        height: 50rem;
+        margin: 0 2rem 0 1rem;
+        background: red;
+        z-index: 5000;
+    } */
+
+    /* Menu */
+
+    /* .link-menu {
+        font-size: 3rem;
+        z-index: 20;
+    }
+
+
+    .img-logo {
+        height: 7rem;
+        width: 10rem;
+        margin: 0.8rem 0 0 3rem;
+    } */
+
+    /* Menu */
+
+    .menu-content {
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }    
+
+    .link-menu {
+        font-size: 1rem;
+        margin: 0.7rem;
+        opacity: 0;
+        transition: all 1000ms ease-in-out;
+        transform: translateY(-6rem);
+    }
+
+    .logo {
+        z-index: 1000;
+    }
+
+    .img-logo {
+        height: 5rem;
+        width: 8rem;
+        margin: 1.8rem 0 0 3rem;
+    }
+
+    .menu-context {
+        height: 9rem;
+        border-bottom: 0.1rem solid var(--color-pink);
+    }
+
+    .linha-divisoria-menu {
+        display: none;
+    }
+    
+    /* Botão abrir fechar menu */
+
+    .nav__checkbox {display: none;  }
+
+    .nav__button {
+    position: fixed;
+    top: 1rem;
+    left: 2rem;
+    margin: 1.5rem;
+    height: 3.75rem;
+    width: 3.75rem;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    /* background-color: rgba(138, 135, 135, 0.098); */
+    background-color: var(--color-background-general);
+    z-index: 3000;
+    }
+
+    .nav__button:hover {box-shadow: 0 0.1rem 2rem rgba(18, 18, 18, 0.2);}
+
+    .nav__checkbox:checked ~ .menu-context {
+        /* transform: translateX(0rem); */
+        height: 18rem;
+    }
+    .nav__checkbox:checked ~ * .link-menu {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+
+    .nav__checkbox:checked + .nav__button .nav__icon {
+        background-color: transparent;
+        }
+        
+    .nav__checkbox:checked + .nav__button .nav__icon::before {
+    transform: rotate(135deg);
+    }
+    
+    .nav__checkbox:checked + .nav__button .nav__icon::after {
+    transform: rotate(-135deg);
+    }
+    .nav__button:hover {box-shadow: 0 0.1rem 2rem rgba(18, 18, 18, 0.2);}
+
+    .nav__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+    .nav__icon::before,
+    .nav__icon::after {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transition: all 1s;
+    }
+
+
+    .nav__icon,
+    .nav__icon::before,
+    .nav__icon::after {
+    width: 1.75rem;
+    height: 0.4rem;
+    background-color: black;
+    }
+
+    .nav__icon:before {
+    transform: translateY(-150%) rotate(0deg) scale(1) skewX(15deg);
+    }
+    
+    .nav__icon:after {
+    transform: translateY(150%) rotate(0deg) scale(1) skewX(-15deg);
+    }
+
+    
+}
+
+@media (max-width: 360px) {
+
+    .produtos {
+        height: 70vh;
+        background-image: url('cardapio-360-640.jpg');
+        padding: 4rem 3.5rem 3rem 1.5rem;
+    }
+
+    .macaneta {
+        left: 3rem;
+        top: 30%;
+        width: 0.5rem;
+        height: 15rem;
+    }
+
+    .forno-content {
+        /* position: absolute;
+        top: 0;
+        left: 0; */
+        width: 100%;
+        height: 100%;
+        /* display: flex; */
+        /* justify-content: flex-end; */
+        z-index: 2;
+    }
+
+    .bolos-dinamicos-mediaquery {
+        padding: 1rem 1rem 5rem 1rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .fotos-context {
+        height: 80vh;
+        position: relative;
+        margin-top: 0;
+    }
+
+    /* Menu */
+
+    .menu-content {
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }    
+
+    .link-menu {
+        font-size: 1rem;
+        margin: 0.7rem;
+        opacity: 0;
+        transition: all 1000ms ease-in-out;
+        transform: translateY(-6rem);
+    }
+
+    .logo {
+        z-index: 1000;
+    }
+
+    .img-logo {
+        height: 5rem;
+        width: 8rem;
+        margin: 0.8rem 0 0 3rem;
+    }
+
+    .menu-context {
+        height: 7rem;
+        border-bottom: 0.1rem solid var(--color-pink);
+    }
+
+    .linha-divisoria-menu {
+        display: none;
+    }
+    
+    /* Botão abrir fechar menu */
+
+    .nav__checkbox {display: none;  }
+
+    .nav__button {
+    position: fixed;
+    top: 0.3rem;
+    left: 2rem;
+    margin: 1.5rem;
+    height: 3.75rem;
+    width: 3.75rem;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    /* background-color: rgba(138, 135, 135, 0.098); */
+    background-color: var(--color-background-general);
+    z-index: 3000;
+    }
+
+    .nav__button:hover {box-shadow: 0 0.1rem 2rem rgba(18, 18, 18, 0.2);}
+
+    .nav__checkbox:checked ~ .menu-context {
+        /* transform: translateX(0rem); */
+        height: 16rem;
+    }
+    .nav__checkbox:checked ~ * .link-menu {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+
+    .nav__checkbox:checked + .nav__button .nav__icon {
+        background-color: transparent;
+      }
+      
+    .nav__checkbox:checked + .nav__button .nav__icon::before {
+    transform: rotate(135deg);
+    }
+    
+    .nav__checkbox:checked + .nav__button .nav__icon::after {
+    transform: rotate(-135deg);
+    }
+    .nav__button:hover {box-shadow: 0 0.1rem 2rem rgba(18, 18, 18, 0.2);}
+
+    .nav__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+    .nav__icon::before,
+    .nav__icon::after {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transition: all 1s;
+    }
+
+
+    .nav__icon,
+    .nav__icon::before,
+    .nav__icon::after {
+    width: 1.75rem;
+    height: 0.4rem;
+    background-color: black;
+    }
+
+    .nav__icon:before {
+    transform: translateY(-150%) rotate(0deg) scale(1) skewX(15deg);
+    }
+    
+    .nav__icon:after {
+    transform: translateY(150%) rotate(0deg) scale(1) skewX(-15deg);
+    }
+
+
+}
